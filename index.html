@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div class="topbar">
+        <nav id="desktop-nav">
+            <div class="logo">Stephen Lee</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Stephen Lee</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.jpg" alt="Stephen Lee profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title" id="main-name">Stephen Lee</h1>
+            <div class="main-job-title-container">
+                <p class="section__text__p2" id="main-job-title">Aspiring Data Analyst</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Stephen-Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="assets/linkedin.png"
+                alt="My Linkedin profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/in/stephenlee6'">
+                <img src="assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/stephenlee66'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-card">
+            <p>Hello! I'm Stephen, a Business Analytics undergraduate at NTU.</p>
+            <p>I’ve developed a strong foundation in data analysis, visualisation, and automation through my coursework and previous internship.</p>
+            <p>I enjoy applying data-driven approaches to solve real-world problems, uncover insights, and create practical impacts.</p> 
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-card">
+            <img src="assets/dmlogo.png" alt="Discovermarket Logo">
+            <div class="experience-content">
+                <p class="experience-title">Finance Automation Intern</p>
+                <p class="experience-subtitle">Corporate Development Department, Discovermarket Asia Pte Ltd</p>
+                <div class="experience-description">
+                    <ul>
+                        <li>Developed cloud-based RPA workflows in Power Automate for invoice data extraction (OCR), file handling and document archiving</li>
+                        <li>Designed and deployed a centralised SharePoint approval system with automated request notifications, reducing invoice approval turnaround time by 70%</li>
+                        <li>Built interactive dashboards visualising $10M+ in annual cash flows, uncovering inflow-outflow trends and delivering insights for improved cash flow management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technical-skills" class="section">
+        <p class="section__text__p1">Key</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="assets/python.png" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/sql.png" alt="SQL">
+                <span>SQL</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/r.png" alt="R">
+                <span>R</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/html.png" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/css.png" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/javascript.png" alt="Javascript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/powerbi.png" alt="Power BI">
+                <span>Power BI</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/tableau.png" alt="Tableau">
+                <span>Tableau</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/excel.jpg" alt="Excel">
+                <span>Excel</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <p class="section__text__p1">View My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="image">
+                <img class="image__img" src="assets/health.jpg" alt="image">
+                <div class="image__overlay">
+                    <div class="image__title">Predictive Analytics</div>
+                    <div class="image__description">HealthierSG</div>
+                    <a class="image__view" href="https://github.com/stephenlee66/BC2406-Analytics-I-Visual-and-Predictive-Techniques">View Project</a>
+                </div>
+            </div>
+
+            <div class="image">
+                <img class="image__img" src="assets/building.jpg" alt="image">
+                <div class="image__overlay">
+                    <div class="image__title">TBC</div>
+                    <div class="image__description">Under Construction ☹️</div>
+                    <a class="image__view" href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <p>I’m open to opportunities and keen to connect!</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:slee155@e.ntu.edu.sg">slee155@e.ntu.edu.sg</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/stephenlee6">stephenlee6</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
