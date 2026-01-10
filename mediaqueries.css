@@ -248,7 +248,7 @@
 }
 
 /* Desktop hover only - devices that support hover */
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
     .image__overlay:hover {
         opacity: 1;
     }
@@ -259,7 +259,7 @@
 }
 
 /* Mobile/touch devices only - always show overlay */
-@media (hover: none) and (pointer: coarse) {
+@media (any-hover: none) {
     .image__overlay {
         opacity: 1;
         background: rgba(0, 0, 0, 0.5);
